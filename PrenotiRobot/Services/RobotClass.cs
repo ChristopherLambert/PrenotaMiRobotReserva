@@ -104,13 +104,13 @@ namespace PrenotiRobot.Services
                 // LOGIN INPUT
                 string inputId = "login-email";
                 IWebElement inputElement = driver.FindElement(By.Id(inputId));
-                string textoParaDigitar = "christopherwhb@gmail.com";
+                string textoParaDigitar = "emailnotreal@gmail.com";
                 inputElement.SendKeys(textoParaDigitar);
 
                 // PASS INPUT
                 string inputIdpass = "login-password";
                 IWebElement inputElementpass = driver.FindElement(By.Id(inputIdpass));
-                string textoParaDigitarpass = "Sunrise2512*";
+                string textoParaDigitarpass = "passnotreal";
                 inputElementpass.SendKeys(textoParaDigitarpass);
 
                 // LOGAR
