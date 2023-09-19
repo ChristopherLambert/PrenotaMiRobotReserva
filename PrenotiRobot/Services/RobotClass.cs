@@ -10,6 +10,7 @@ namespace PrenotiRobot.Services
         public bool isRunning = false;
         public bool isLogin = false;
         public readonly string urlPrenoti = "https://prenotami.esteri.it/Services";
+        public readonly string urlBooking671 = "https://prenotami.esteri.it/Services/Booking/671";
         public readonly string chromeDriverPath = @"C:\Program Files\Google\Chrome\Application\";
 
         #region Event
@@ -138,6 +139,11 @@ namespace PrenotiRobot.Services
                 // Trate a exceção aqui, por exemplo, informando que o botão não foi encontrado
                 Console.WriteLine("O botão não foi encontrado na página.");
             }
+            catch (ElementClickInterceptedException)
+            {
+                // Trate a exceção aqui, por exemplo, informando que o botão não foi encontrado
+                Console.WriteLine("O botão não foi encontrado na página (Sobreposição).");
+            }
         }
 
         public void GoBackScreeReserva()
@@ -155,14 +161,24 @@ namespace PrenotiRobot.Services
                     buttonElement.Click();
                 else
                 {
-                    Console.WriteLine("Reserva Encontrada.");
-                    this.isRunning = false;
+                    Thread.Sleep(4000);
+                    if (driver.Url == this.urlBooking671)
+                    {
+                        Console.WriteLine("Reserva Encontrada.");
+                        Console.WriteLine("Você está na URL desejada.");
+                        this.isRunning = false;
+                    }
                 }
             }
             catch (NoSuchElementException)
             {
                 // Trate a exceção aqui, por exemplo, informando que o botão não foi encontrado
                 Console.WriteLine("O botão não foi encontrado na página.");
+            }
+            catch (ElementClickInterceptedException)
+            {
+                // Trate a exceção aqui, por exemplo, informando que o botão não foi encontrado
+                Console.WriteLine("O botão não foi encontrado na página (Sobreposição).");
             }
         }
         #endregion

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PROJETOS\\FRIGERIO\\PrenotiRobot\\PrenotiRobot\\PrenotiRobot.csproj": {}
+    "C:\\PROJETOS\\FRIGERIO\\PrenotaMiRobotReserva\\PrenotiRobot\\PrenotiRobot.csproj": {}
   },
   "projects": {
-    "C:\\PROJETOS\\FRIGERIO\\PrenotiRobot\\PrenotiRobot\\PrenotiRobot.csproj": {
+    "C:\\PROJETOS\\FRIGERIO\\PrenotaMiRobotReserva\\PrenotiRobot\\PrenotiRobot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PROJETOS\\FRIGERIO\\PrenotiRobot\\PrenotiRobot\\PrenotiRobot.csproj",
+        "projectUniqueName": "C:\\PROJETOS\\FRIGERIO\\PrenotaMiRobotReserva\\PrenotiRobot\\PrenotiRobot.csproj",
         "projectName": "PrenotiRobot",
-        "projectPath": "C:\\PROJETOS\\FRIGERIO\\PrenotiRobot\\PrenotiRobot\\PrenotiRobot.csproj",
+        "projectPath": "C:\\PROJETOS\\FRIGERIO\\PrenotaMiRobotReserva\\PrenotiRobot\\PrenotiRobot.csproj",
         "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\PROJETOS\\FRIGERIO\\PrenotiRobot\\PrenotiRobot\\obj\\",
+        "outputPath": "C:\\PROJETOS\\FRIGERIO\\PrenotaMiRobotReserva\\PrenotiRobot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",

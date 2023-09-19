@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/Szf3A1W7bQJflAeSnPLKbqlJ5+l7bqHQ3JBye0S7XnilAev6lrDZ06Q58XwoxMX1lHlB3a90BGlrQX/flob5A==",
+  "dgSpecHash": "Rr5yjS+q/X4fN0B9vEAgrFjqNspIiL5tW/2X/5MK7LkQUhM/hMl8j5oVjFgBYHLqo1BJr3yh2xGs+/qTL1Am5w==",
   "success": true,
-  "projectFilePath": "C:\\PROJETOS\\FRIGERIO\\PrenotiRobot\\PrenotiRobot\\PrenotiRobot.csproj",
+  "projectFilePath": "C:\\PROJETOS\\FRIGERIO\\PrenotaMiRobotReserva\\PrenotiRobot\\PrenotiRobot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.19.0\\microsoft.identitymodel.abstractions.6.19.0.nupkg.sha512",
