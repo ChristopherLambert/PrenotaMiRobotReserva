@@ -50,6 +50,9 @@ namespace PrenotiRobot.Services
                 string url = urlPrenoti; // Substitua pela URL que deseja abrir
                 driver.Navigate().GoToUrl(url);
                 this.Running = true;
+
+                //Thread.Sleep(10000);
+                //this.RemoveCookie();
                 this.CycleRunning();
               
             }
@@ -180,6 +183,13 @@ namespace PrenotiRobot.Services
                 // Trate a exceção aqui, por exemplo, informando que o botão não foi encontrado
                 Console.WriteLine("O botão não foi encontrado na página (Sobreposição).");
             }
+        }
+
+        private void RemoveCookie() 
+        { 
+            // Executar JavaScript para limpar os cookies
+            IJavaScriptExecutor jsExecutor = (IJavaScriptExecutor)driver;
+            jsExecutor.ExecuteScript("document.cookie.split(';').forEach(function(c) { document.cookie = c.replace(/^ +/, '').replace(/=.*/, '=;expires=' + new Date().toUTCString() + ';path=/'); });");
         }
         #endregion
     }
