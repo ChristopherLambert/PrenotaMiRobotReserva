@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "/Szf3A1W7bQJflAeSnPLKbqlJ5+l7bqHQ3JBye0S7XnilAev6lrDZ06Q58XwoxMX1lHlB3a90BGlrQX/flob5A==",
+  "success": true,
+  "projectFilePath": "C:\\PROJETOS\\FRIGERIO\\PrenotiRobot\\PrenotiRobot\\PrenotiRobot.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chris\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.19.0\\microsoft.identitymodel.abstractions.6.19.0.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\microsoft.identitymodel.logging\\6.19.0\\microsoft.identitymodel.logging.6.19.0.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.19.0\\microsoft.identitymodel.tokens.6.19.0.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\selenium.webdriver\\4.12.4\\selenium.webdriver.4.12.4.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\selenium.webdriver.chromedriver\\116.0.5845.9600-beta\\selenium.webdriver.chromedriver.116.0.5845.9600-beta.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
