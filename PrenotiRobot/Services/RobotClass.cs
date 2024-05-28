@@ -1,6 +1,8 @@
 ﻿using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using WebDriverManager;
+using WebDriverManager.DriverConfigs.Impl;
 
 namespace PrenotiRobot.Services
 {
@@ -9,6 +11,10 @@ namespace PrenotiRobot.Services
         public IWebDriver driver;
         public bool isRunning = false;
         public bool isLogin = false;
+
+        private string login { get; set; }
+        private string pass { get; set; }
+
         public readonly string urlPrenoti = "https://prenotami.esteri.it/Services";
         public readonly string urlBooking671 = "https://prenotami.esteri.it/Services/Booking/671";
         public readonly string chromeDriverPath = @"C:\Program Files\Google\Chrome\Application\";
@@ -32,19 +38,25 @@ namespace PrenotiRobot.Services
         #endregion
 
         #region Method
-        public async Task StartRobot()
+        public async Task StartRobot(string login, string pass)
         {
+            this.login = login;
+            this.pass = pass;
             this.OpenBrowser();
         }
 		private void OpenBrowser()
 		{
             try
             {
+                // Usa WebDriverManager para instalar a versão correta do ChromeDriver
+                // new DriverManager().SetUpDriver(new ChromeConfig());
+
                 // Inicializar o navegador Chrome
                 ChromeOptions options = new ChromeOptions();
                 options.AddArgument("--start-maximized"); // Opcional: Iniciar o Chrome maximizado
 
                 driver = new ChromeDriver(chromeDriverPath, options);
+                // driver = new ChromeDriver();
 
                 // Navegar para uma URL
                 string url = urlPrenoti; // Substitua pela URL que deseja abrir
@@ -104,14 +116,14 @@ namespace PrenotiRobot.Services
                 // LOGIN INPUT
                 string inputId = "login-email";
                 IWebElement inputElement = driver.FindElement(By.Id(inputId));
-                string textoParaDigitar = "emailnotreal@gmail.com";
-                inputElement.SendKeys(textoParaDigitar);
+                // string textoParaDigitar = "emailnotreal@gmail.com";
+                inputElement.SendKeys(this.login);
 
                 // PASS INPUT
                 string inputIdpass = "login-password";
                 IWebElement inputElementpass = driver.FindElement(By.Id(inputIdpass));
-                string textoParaDigitarpass = "passnotreal";
-                inputElementpass.SendKeys(textoParaDigitarpass);
+                // string textoParaDigitarpass = "passnotreal";
+                inputElementpass.SendKeys(this.pass);
 
                 // LOGAR
                 IWebElement buttonElement = driver.FindElement(By.ClassName("g-recaptcha"));

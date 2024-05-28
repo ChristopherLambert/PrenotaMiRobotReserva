@@ -28,50 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PrenotiLabel = new System.Windows.Forms.Label();
-            this.BtnMain = new System.Windows.Forms.Button();
-            this.CheckLogin = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            PrenotiLabel = new Label();
+            BtnMain = new Button();
+            CheckLogin = new Button();
+            textLogin = new TextBox();
+            testPass = new TextBox();
+            loginLabel = new Label();
+            passLabel = new Label();
+            SuspendLayout();
             // 
             // PrenotiLabel
             // 
-            this.PrenotiLabel.AutoSize = true;
-            this.PrenotiLabel.Location = new System.Drawing.Point(36, 27);
-            this.PrenotiLabel.Name = "PrenotiLabel";
-            this.PrenotiLabel.Size = new System.Drawing.Size(93, 15);
-            this.PrenotiLabel.TabIndex = 0;
-            this.PrenotiLabel.Text = "PRENOTI ROBOT";
+            PrenotiLabel.AutoSize = true;
+            PrenotiLabel.Location = new Point(36, 27);
+            PrenotiLabel.Name = "PrenotiLabel";
+            PrenotiLabel.Size = new Size(144, 25);
+            PrenotiLabel.TabIndex = 0;
+            PrenotiLabel.Text = "PRENOTI ROBOT";
             // 
             // BtnMain
             // 
-            this.BtnMain.Location = new System.Drawing.Point(36, 65);
-            this.BtnMain.Name = "BtnMain";
-            this.BtnMain.Size = new System.Drawing.Size(201, 23);
-            this.BtnMain.TabIndex = 1;
-            this.BtnMain.Text = "BTN MAIN";
-            this.BtnMain.UseVisualStyleBackColor = true;
-            this.BtnMain.Click += new System.EventHandler(this.button1_Click);
+            BtnMain.Location = new Point(36, 65);
+            BtnMain.Name = "BtnMain";
+            BtnMain.Size = new Size(201, 38);
+            BtnMain.TabIndex = 1;
+            BtnMain.Text = "BTN MAIN";
+            BtnMain.UseVisualStyleBackColor = true;
+            BtnMain.Click += button1_Click;
             // 
             // CheckLogin
             // 
-            this.CheckLogin.Location = new System.Drawing.Point(36, 94);
-            this.CheckLogin.Name = "CheckLogin";
-            this.CheckLogin.Size = new System.Drawing.Size(201, 23);
-            this.CheckLogin.TabIndex = 2;
-            this.CheckLogin.Text = "Check Login";
-            this.CheckLogin.UseVisualStyleBackColor = true;
-            this.CheckLogin.Click += new System.EventHandler(this.CheckLogin_Click);
+            CheckLogin.Location = new Point(255, 65);
+            CheckLogin.Name = "CheckLogin";
+            CheckLogin.Size = new Size(201, 38);
+            CheckLogin.TabIndex = 2;
+            CheckLogin.Text = "Check Login";
+            CheckLogin.UseVisualStyleBackColor = true;
+            CheckLogin.Click += CheckLogin_Click;
+            // 
+            // textLogin
+            // 
+            textLogin.Location = new Point(116, 129);
+            textLogin.Name = "textLogin";
+            textLogin.Size = new Size(340, 31);
+            textLogin.TabIndex = 3;
+            // 
+            // testPass
+            // 
+            testPass.Location = new Point(116, 181);
+            testPass.Name = "testPass";
+            testPass.Size = new Size(340, 31);
+            testPass.TabIndex = 4;
+            // 
+            // loginLabel
+            // 
+            loginLabel.AutoSize = true;
+            loginLabel.Location = new Point(39, 134);
+            loginLabel.Name = "loginLabel";
+            loginLabel.Size = new Size(60, 25);
+            loginLabel.TabIndex = 5;
+            loginLabel.Text = "Login:";
+            loginLabel.UseMnemonic = false;
+            // 
+            // passLabel
+            // 
+            passLabel.AutoSize = true;
+            passLabel.Location = new Point(39, 184);
+            passLabel.Name = "passLabel";
+            passLabel.Size = new Size(50, 25);
+            passLabel.TabIndex = 6;
+            passLabel.Text = "Pass:";
+            passLabel.UseMnemonic = false;
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.CheckLogin);
-            this.Controls.Add(this.BtnMain);
-            this.Controls.Add(this.PrenotiLabel);
-            this.Name = "Form1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            ClientSize = new Size(487, 261);
+            Controls.Add(passLabel);
+            Controls.Add(loginLabel);
+            Controls.Add(testPass);
+            Controls.Add(textLogin);
+            Controls.Add(CheckLogin);
+            Controls.Add(BtnMain);
+            Controls.Add(PrenotiLabel);
+            Name = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -79,5 +120,9 @@
         private Label PrenotiLabel;
         private Button BtnMain;
         private Button CheckLogin;
+        private TextBox textLogin;
+        private TextBox testPass;
+        private Label loginLabel;
+        private Label passLabel;
     }
 }
