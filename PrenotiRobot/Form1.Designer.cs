@@ -32,7 +32,7 @@
             BtnMain = new Button();
             CheckLogin = new Button();
             textLogin = new TextBox();
-            testPass = new TextBox();
+            textPass = new TextBox();
             loginLabel = new Label();
             passLabel = new Label();
             SuspendLayout();
@@ -73,12 +73,12 @@
             textLogin.Size = new Size(340, 31);
             textLogin.TabIndex = 3;
             // 
-            // testPass
+            // textPass
             // 
-            testPass.Location = new Point(116, 181);
-            testPass.Name = "testPass";
-            testPass.Size = new Size(340, 31);
-            testPass.TabIndex = 4;
+            textPass.Location = new Point(116, 181);
+            textPass.Name = "textPass";
+            textPass.Size = new Size(340, 31);
+            textPass.TabIndex = 4;
             // 
             // loginLabel
             // 
@@ -105,7 +105,7 @@
             ClientSize = new Size(487, 261);
             Controls.Add(passLabel);
             Controls.Add(loginLabel);
-            Controls.Add(testPass);
+            Controls.Add(textPass);
             Controls.Add(textLogin);
             Controls.Add(CheckLogin);
             Controls.Add(BtnMain);
@@ -121,7 +121,7 @@
         private Button BtnMain;
         private Button CheckLogin;
         private TextBox textLogin;
-        private TextBox testPass;
+        private TextBox textPass;
         private Label loginLabel;
         private Label passLabel;
     }

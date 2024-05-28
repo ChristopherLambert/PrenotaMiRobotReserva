@@ -24,7 +24,7 @@ namespace PrenotiRobot
         {
             var trobot = new Task(() =>
             {
-                this.robot.StartRobot(this.textLogin.Text, this.textLogin.Text);
+                this.robot.StartRobot(this.textLogin.Text, this.textPass.Text);
                 this.robot.StateRunningChanged += Robot_StateRunningChanged;
             });
 

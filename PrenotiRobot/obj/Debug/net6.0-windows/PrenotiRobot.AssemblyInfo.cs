@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PrenotiRobot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+184cb5a28f40033e0c727853bca64c5bada6ac1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d97a982de7c1872340fa5ef45a45cc98e0037c33")]
 [assembly: System.Reflection.AssemblyProductAttribute("PrenotiRobot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PrenotiRobot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
